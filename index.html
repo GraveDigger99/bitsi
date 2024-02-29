@@ -5,7 +5,7 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20240227101044">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240229191133">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -330,32 +330,32 @@
 					<h3 data-watch data-watch-once data-transform-to-top class="contact__label">Don’t hesitate - book a consultation and discover what we have to offer to
 						YOU.</h3>
 					<h2 data-watch data-watch-once data-transform-to-top class="contact__subtitle">Contact Us</h2>
-					<form data-dev action="#" class="contact__form">
+					<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="contact__form">
 						<div class="contact__inputs">
 							<div class="contact__line">
-								<input data-required autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Full name*" class="input">
+								<input data-required autocomplete="off" type="text" name="username" data-error="Ошибка" placeholder="Full name*" class="input">
 							</div>
 							<div class="contact__line">
-								<input data-required="email" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Email*" class="input">
+								<input data-required="email" autocomplete="off" type="text" name="usermail" data-error="Ошибка" placeholder="Email*" class="input">
 							</div>
 						</div>
 						<div class="contact__inputs">
 							<div class="contact__line">
-								<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Phone number*" class="input">
+								<input data-required autocomplete="off" type="text" name="userphone" data-error="Error" placeholder="Phone number*" class="input">
 							</div>
 							<div class="contact__line">
-								<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Country*" class="input">
+								<input data-required autocomplete="off" type="text" name="usercountry" data-error="Error" placeholder="Country*" class="input">
 							</div>
 						</div>
 						<div class="contact__line">
-							<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Phone number*" class="input">
+							<input data-required autocomplete="off" type="text" name="userphone" data-error="Error" placeholder="Phone number*" class="input">
 						</div>
 						<div class="contact__line">
-							<input data-required autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Message*" class="input">
+							<input data-required autocomplete="off" type="text" name="usermessage" data-error="Error" placeholder="Message*" class="input">
 						</div>
 						<div class="contact__file">
 							<label class="file-label" for="upload-photo">Add an attachment</label>
-							<input type="file" name="photo" id="upload-photo" />
+							<input type="file" name="image" id="upload-photo" />
 						</div>
 						<button type="submit" class="contact__btn">Send Massage</button>
 					</form>
@@ -429,7 +429,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240227101044"></script>
+	<script src="js/app.min.js?_v=20240229191133"></script>
 </body>
 
 </html>
