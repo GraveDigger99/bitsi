@@ -22,7 +22,7 @@
 	*/
 
 	//От кого письмо
-	$mail->setFrom('from@gmail.com', 'bitsisolutions'); // Указать нужный E-mail
+	$mail->setFrom('from@gmail.com', 'ibrahimovaydin@mail.ru'); // Указать нужный E-mail
 	//Кому отправить
 	$mail->addAddress('ibrahimovaydin@mail.ru'); // Указать нужный E-mail
 	//Тема письма
